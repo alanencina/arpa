@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="aprendeconmoni - Aprende arpa desde cero. Clases de arpa, partituras, técnica de postura, repertorio musical y más. ¡Descubre la magia del arpa!">
+    <meta name="keywords"
+        content="clases de arpa, aprender arpa, partituras arpa, arpa online, música arpa, técnica arpa">
+    <meta name="author" content="aprendeconmoni">
+    <meta property="og:title" content="aprendeconmoni - Aprende la Magia del Arpa">
+    <meta property="og:description"
+        content="Clases de arpa, partituras, técnica y mucho más. Empieza tu viaje musical hoy.">
+    <meta property="og:type" content="website">
+    <title>Moni 🎵</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ===== PARTICLES BACKGROUND ===== -->
+    <div class="particles-container" id="particles-container"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="images/logo.jpg" alt="aprendeconmoni logo" class="logo-img"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                <div class="logo-fallback">🎵</div>
+                <span class="logo-text">aprendecon<span class="logo-accent">moni</span></span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#showcase" class="nav-link">Mi Mundo</a></li>
+                <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li><a href="#sobre-mi" class="nav-link">Sobre Mí</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <a href="#contacto" class="btn-nav-cta">¡Empieza Ahora!</a>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="#servicios" class="mobile-link">Servicios</a></li>
+                <li><a href="#showcase" class="mobile-link">Mi Mundo</a></li>
+                <li><a href="#testimonios" class="mobile-link">Testimonios</a></li>
+                <li><a href="#sobre-mi" class="mobile-link">Sobre Mí</a></li>
+                <li><a href="#contacto" class="mobile-link">Contacto</a></li>
+            </ul>
+            <a href="#contacto" class="btn-primary mobile-cta">¡Empieza Ahora!</a>
+        </div>
+    </nav>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-gradient"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-label">
+                    <span class="label-dot"></span>
+                    🎵 Tu viaje musical comienza aquí
+                </div>
+                <h1 class="hero-title">
+                    Aprendé Arpa<br>
+                    <span class="gradient-text">desde Cero</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Aprende a tocar el arpa con pasión y técnica. Desde tus primeras notas hasta
+                    dominar partituras complejas — te acompaño en cada paso de tu camino musical.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="#contacto" class="btn-primary pulse-glow" id="hero-cta-primary">
+                        🎶 Comenzar Clases
+                    </a>
+                    <a href="#servicios" class="btn-secondary" id="hero-cta-secondary">
+                        Ver Servicios →
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="150">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Alumnos Felices</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="8">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Años de Experiencia</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Partituras Enseñadas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-glow-ring"></div>
+                <div class="hero-img-wrapper float-animation">
+                    <img src="images/hero_visual.jpg" alt="Arpa mágica - aprendeconmoni" class="hero-img"
+                        onerror="this.parentElement.classList.add('hero-img-fallback')">
+                    <div class="hero-img-overlay"></div>
+                </div>
+                <div class="hero-badge hero-badge-1">
+                    <span class="badge-icon">🎵</span>
+                    <span>Clases Online & Presencial</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- ===== SOCIAL PROOF / LOGOS ===== -->
+    <section class="social-proof" id="social-proof">
+        <div class="container">
+            <p class="proof-label">🎶 Como vista en y conectada con</p>
+            <div class="proof-logos">
+                <div class="proof-logo-item">🎼 Conservatorio Municipal</div>
+                <div class="proof-logo-item">🏆 Festival de Arpa Nacional</div>
+                <div class="proof-logo-item">📻 Radio Música Clásica</div>
+                <div class="proof-logo-item">🎓 Escuela de Música Online</div>
+                <div class="proof-logo-item">🌐 Comunidad Musical</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICIOS / FLIP CARDS ===== -->
+    <section class="servicios" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">🎵 Lo que ofrezco</span>
+                <h2 class="section-title">Mis <span class="gradient-text">Servicios</span></h2>
+                <p class="section-subtitle">Desde el primer acorde hasta la actuación en escena, tengo el servicio
+                    perfecto para tu etapa musical.</p>
+            </div>
+            <div class="services-grid">
+
+                <!-- Servicio 1: Clases de Arpa -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/arpamoni.jpeg" alt="Clases de Arpa" class="service-image">
+                            <div class="service-overlay">
+                                <div class="service-icon-front">🎵</div>
+                                <h3 class="service-title-front">Clases de Arpa</h3>
+                                <p class="service-hint-front">Toca para ver más →</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <div class="service-icon-back">🎵</div>
+                            <h3 class="service-title-back">Clases de Arpa</h3>
+                            <p class="service-description">Clases personalizadas adaptadas a tu nivel. Aprende desde las
+                                notas básicas hasta piezas avanzadas con una guía experta y apasionada.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Todos los niveles</span>
+                                <span class="feature-tag">Online & Presencial</span>
+                                <span class="feature-tag">Clases flexibles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 2: Partituras -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_2.png" alt="Aprender Partituras" class="service-image">
+                            <div class="service-overlay">
+                                <div class="service-icon-front">🎼</div>
+                                <h3 class="service-title-front">Lectura de Partituras</h3>
+                                <p class="service-hint-front">Toca para ver más →</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <div class="service-icon-back">🎼</div>
+                            <h3 class="service-title-back">Lectura de Partituras</h3>
+                            <p class="service-description">Domina el lenguaje musical del arpa. Aprende a leer e
+                                interpretar partituras clásicas y contemporáneas con confianza y fluidez.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Solfeo</span>
+                                <span class="feature-tag">Teoría Musical</span>
+                                <span class="feature-tag">Práctica guiada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 3: Técnica y Postura -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/service_3.png" alt="Técnica y Postura" class="service-image">
+                            <div class="service-overlay">
+                                <div class="service-icon-front">💪</div>
+                                <h3 class="service-title-front">Técnica & Postura</h3>
+                                <p class="service-hint-front">Toca para ver más →</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <div class="service-icon-back">💪</div>
+                            <h3 class="service-title-back">Técnica & Postura</h3>
+                            <p class="service-description">La postura correcta es fundamental. Aprende cómo colocarte al
+                                tocar el arpa para evitar lesiones, mejorar tu sonido y tocar durante horas sin fatiga.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">Ergonomía</span>
+                                <span class="feature-tag">Técnica de manos</span>
+                                <span class="feature-tag">Prevención lesiones</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 4: Música para Eventos -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front">
+                            <img src="images/arpamoni2.jpeg" alt="Música para Eventos" class="service-image">
+                            <div class="service-overlay">
+                                <div class="service-icon-front">🌟</div>
+                                <h3 class="service-title-front">Música para Eventos</h3>
+                                <p class="service-hint-front">Toca para ver más →</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <div class="service-icon-back">🌟</div>
+                            <h3 class="service-title-back">Música para Eventos</h3>
+                            <p class="service-description">Dale un toque mágico a tu evento especial. Actuaciones de
+                                arpa en vivo para bodas, cumpleaños, eventos corporativos y ocasiones únicas.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Bodas & Ceremonias</span>
+                                <span class="feature-tag">Eventos Privados</span>
+                                <span class="feature-tag">Repertorio Custom</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 5: Arpa para Principiantes -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front service-card-front-css">
+                            <div class="service-css-art beginners-art">
+                                <div class="css-harp-mini">
+                                    <div class="css-harp-body-mini"></div>
+                                    <div class="css-strings-mini">
+                                        <span></span><span></span><span></span><span></span><span></span>
+                                    </div>
+                                </div>
+                                <div class="beginners-sparkles">
+                                    <span>✨</span><span>🌱</span><span>🎵</span>
+                                </div>
+                            </div>
+                            <div class="service-overlay">
+                                <div class="service-icon-front">🌱</div>
+                                <h3 class="service-title-front">Arpa desde Cero</h3>
+                                <p class="service-hint-front">Toca para ver más →</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <div class="service-icon-back">🌱</div>
+                            <h3 class="service-title-back">Arpa desde Cero</h3>
+                            <p class="service-description">¿Sin experiencia previa? ¡Perfecto! Programa especial para
+                                principiantes diseñado para que en pocas semanas estés tocando tus primeras melodías.
+                            </p>
+                            <div class="service-features">
+                                <span class="feature-tag">Sin experiencia previa</span>
+                                <span class="feature-tag">Ritmo propio</span>
+                                <span class="feature-tag">Apoyo total</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Servicio 6: Repertorio Musical -->
+                <div class="service-card-flip">
+                    <div class="service-card-inner">
+                        <div class="service-card-front service-card-front-css">
+                            <div class="service-css-art repertoire-art">
+                                <div class="music-notes-art">
+                                    <span class="note n1">♩</span>
+                                    <span class="note n2">♪</span>
+                                    <span class="note n3">♫</span>
+                                    <span class="note n4">♬</span>
+                                    <span class="note n5">𝄞</span>
+                                </div>
+                                <div class="music-lines">
+                                    <span></span><span></span><span></span><span></span><span></span>
+                                </div>
+                            </div>
+                            <div class="service-overlay">
+                                <div class="service-icon-front">🎶</div>
+                                <h3 class="service-title-front">Repertorio Musical</h3>
+                                <p class="service-hint-front">Toca para ver más →</p>
+                            </div>
+                        </div>
+                        <div class="service-card-back glass-card">
+                            <div class="service-icon-back">🎶</div>
+                            <h3 class="service-title-back">Repertorio Musical</h3>
+                            <p class="service-description">Construye tu propio repertorio musical. Desde clásicos
+                                atemporales hasta piezas contemporáneas y música popular adaptada al arpa.</p>
+                            <div class="service-features">
+                                <span class="feature-tag">Clásico & Moderno</span>
+                                <span class="feature-tag">Cinema & Pop</span>
+                                <span class="feature-tag">Piezas personalizadas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SHOWCASE / MI MUNDO ===== -->
+    <section class="showcase" id="showcase">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">🎨 Mi Universo Musical</span>
+                <h2 class="section-title">Un Viaje por la <span class="gradient-text">Música del Arpa</span></h2>
+                <p class="section-subtitle">Cada alumno tiene una historia única. Aquí algunos momentos especiales de
+                    nuestra comunidad musical.</p>
+            </div>
+            <div class="showcase-grid">
+                <div class="showcase-item large glass-card reveal-item">
+                    <div class="showcase-icon">🎵</div>
+                    <h3>Música que Emociona</h3>
+                    <p>El arpa es uno de los instrumentos más antiguos del mundo. Su sonido etéreo tiene el poder de
+                        tocar el alma y crear memorias que duran toda la vida.</p>
+                    <div class="showcase-visual harp-visualization">
+                        <div class="harp-strings-anim">
+                            <span style="--delay:0s;--h:60%"></span>
+                            <span style="--delay:0.1s;--h:70%"></span>
+                            <span style="--delay:0.2s;--h:80%"></span>
+                            <span style="--delay:0.3s;--h:90%"></span>
+                            <span style="--delay:0.4s;--h:100%"></span>
+                            <span style="--delay:0.5s;--h:95%"></span>
+                            <span style="--delay:0.6s;--h:85%"></span>
+                            <span style="--delay:0.7s;--h:75%"></span>
+                            <span style="--delay:0.8s;--h:65%"></span>
+                            <span style="--delay:0.9s;--h:55%"></span>
+                            <span style="--delay:1s;--h:50%"></span>
+                            <span style="--delay:1.1s;--h:60%"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-item glass-card reveal-item">
+                    <div class="showcase-number gradient-text">150+</div>
+                    <h3>Alumnos Transformados</h3>
+                    <p>Personas de todas las edades que han descubierto su amor por el arpa con nuestra guía.</p>
+                </div>
+                <div class="showcase-item glass-card reveal-item">
+                    <div class="showcase-number gradient-text">8+</div>
+                    <h3>Años de Experiencia</h3>
+                    <p>Años dedicados a la enseñanza del arpa con amor, paciencia y metodología probada.</p>
+                </div>
+                <div class="showcase-item glass-card reveal-item">
+                    <div class="showcase-quote">
+                        <span class="quote-mark">"</span>
+                        <p>La música no es solo sonido, es la expresión más pura de lo que llevamos dentro.</p>
+                        <span class="quote-author">— Moni 🎵</span>
+                    </div>
+                </div>
+                <div class="showcase-item glass-card reveal-item">
+                    <div class="showcase-notes-grid">
+                        <span class="big-note" style="--rot:-10deg;--x:10%;--y:10%">♪</span>
+                        <span class="big-note" style="--rot:15deg;--x:60%;--y:20%">♫</span>
+                        <span class="big-note" style="--rot:-5deg;--x:20%;--y:55%">♩</span>
+                        <span class="big-note" style="--rot:20deg;--x:65%;--y:60%">♬</span>
+                        <span class="big-note" style="--rot:-15deg;--x:40%;--y:35%">𝄞</span>
+                    </div>
+                    <h3>Comunidad Musical</h3>
+                    <p>Únete a nuestra vibrante comunidad de amantes del arpa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROCESO / HOW IT WORKS ===== -->
+    <section class="proceso" id="proceso">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">🗺️ Cómo Funciona</span>
+                <h2 class="section-title">Tu Camino <span class="gradient-text">Musical</span></h2>
+            </div>
+            <div class="proceso-steps">
+                <div class="step-item reveal-item">
+                    <div class="step-number">01</div>
+                    <div class="step-content glass-card">
+                        <div class="step-icon">📞</div>
+                        <h3>Primera Consulta</h3>
+                        <p>Conversamos sobre tus metas, nivel actual y disponibilidad. ¡Sin compromiso!</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-item reveal-item">
+                    <div class="step-number">02</div>
+                    <div class="step-content glass-card">
+                        <div class="step-icon">🎯</div>
+                        <h3>Plan Personalizado</h3>
+                        <p>Creo un programa adaptado específicamente a ti, tus objetivos y tu ritmo.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-item reveal-item">
+                    <div class="step-number">03</div>
+                    <div class="step-content glass-card">
+                        <div class="step-icon">🎵</div>
+                        <h3>Aprende y Crece</h3>
+                        <p>Clases regulares, materiales exclusivos y seguimiento constante de tu progreso.</p>
+                    </div>
+                </div>
+                <div class="step-connector"></div>
+                <div class="step-item reveal-item">
+                    <div class="step-number">04</div>
+                    <div class="step-content glass-card">
+                        <div class="step-icon">🌟</div>
+                        <h3>¡Brilla en Escena!</h3>
+                        <p>Domina tu instrumento y comparte tu música con el mundo con confianza.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIOS ===== -->
+    <section class="testimonios" id="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">💜 Lo que dicen mis alumnos</span>
+                <h2 class="section-title">Historias de <span class="gradient-text">Éxito</span></h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card glass-card reveal-item">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Empecé sin tener ningún conocimiento musical y en 6 meses ya estaba
+                        tocando piezas que parecían imposibles. Moni tiene una paciencia y un talento para enseñar
+                        increíbles."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <span class="author-name">Alan encina</span>
+                            <span class="author-role">Alumna Principiante • 6 meses</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card reveal-item">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Gracias a las clases de postura y técnica, logré superar el dolor de
+                        muñeca que tenía. Ahora toco con una comodidad que nunca pensé posible. ¡Totalmente
+                        recomendable!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">C</div>
+                        <div class="author-info">
+                            <span class="author-name">Lorena Aparo</span>
+                            <span class="author-role">Alumna Intermedia • 1 año</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card reveal-item">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Contratar a Moni para mi boda fue la mejor decisión. La música del arpa
+                        creó una atmósfera mágica que todos nuestros invitados recordarán para siempre."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <span class="author-name">Jeanette Ontivero</span>
+                            <span class="author-role">Evento Musical • Boda 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card glass-card reveal-item">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Las clases de lectura de partituras cambiaron todo para mí. Ahora puedo
+                        aprender cualquier pieza por mi cuenta. El método de Moni es claro, progresivo y muy efectivo."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <span class="author-name">Juan</span>
+                            <span class="author-role">Alumno Avanzado • 2 años</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE MÍ ===== -->
+    <section class="sobre-mi" id="sobre-mi">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual reveal-item">
+                    <div class="about-glow-ring"></div>
+                    <div class="about-img-wrapper">
+                        <div class="about-avatar-art">
+                            <div class="avatar-harp-icon">🎵</div>
+                            <div class="avatar-name">Moni</div>
+                        </div>
+                    </div>
+                    <div class="about-badges">
+                        <div class="about-badge">
+                            <span>🎓</span> Formación Clásica
+                        </div>
+                        <div class="about-badge">
+                            <span>🏆</span> 8+ Años Enseñando
+                        </div>
+                        <div class="about-badge">
+                            <span>💜</span> Pasión por la Música
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content reveal-item">
+                    <span class="section-label"> Sobre Mí</span>
+                    <h2 class="section-title">Hola, soy <span class="gradient-text">Moni</span> </h2>
+                    <p class="about-text">Soy arpista profesional con más de 8 años de experiencia enseñando a personas
+                        de todas las edades. Mi amor por el arpa comenzó desde pequeña, cuando escuché por primera vez
+                        sus cuerdas vibrar y supe que esa sería mi pasión de vida.</p>
+                    <p class="about-text">Mi metodología combina la enseñanza clásica con un enfoque moderno y
+                        personalizado. Creo firmemente que cada persona puede aprender a tocar el arpa, sin importar su
+                        edad o experiencia previa. Lo que necesitas es pasión y las herramientas correctas.</p>
+                    <p class="about-text">En <strong>aprendeconmoni</strong> no solo aprenderás técnica musical —
+                        vivirás una transformación personal a través de la música.</p>
+                    <div class="about-social">
+                        <a href="https://www.instagram.com/vera_viveros?igsh=MXg4aGVkeTZ6dDM1OQ==" class="social-link"
+                            id="link-instagram" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+                            </svg>
+                            Instagram
+                        </a>
+                        <a href="#" class="social-link" id="link-youtube" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+                            </svg>
+                            YouTube
+                        </a>
+                        <a href="#" class="social-link" id="link-tiktok" aria-label="TikTok">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.28 6.28 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.01a8.16 8.16 0 0 0 4.77 1.52V7.08a4.85 4.85 0 0 1-1-.39z" />
+                            </svg>
+                            TikTok
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="cta-final" id="cta-final">
+        <div class="cta-glow-bg"></div>
+        <div class="container">
+            <div class="cta-content reveal-item">
+                <span class="cta-emoji">🎵</span>
+                <h2 class="cta-title">¿Lista para crear <span class="gradient-text">tu propia música</span>?</h2>
+                <p class="cta-subtitle">El mejor momento para empezar era ayer. El segundo mejor momento es ahora. Tu
+                    arpa te está esperando.</p>
+                <a href="#contacto" class="btn-primary btn-large pulse-glow" id="cta-final-btn">
+                    Reservar Mi Primera Clase
+                </a>
+                <p class="cta-guarantee">✅ Primera consulta gratuita · Sin compromiso · Cancela cuando quieras</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="contacto" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">✉️ Contáctame</span>
+                <h2 class="section-title">¡Hablemos de <span class="gradient-text">Música!</span></h2>
+                <p class="section-subtitle">Completa el formulario y me pondré en contacto contigo en menos de 24 horas.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-item">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📩</div>
+                        <div>
+                            <strong>Email</strong>
+                            <span>vera_viveros@hotmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <span>Escríbeme directamente</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <strong>Horario de clases</strong>
+                            <span>Lunes a Sábado, 9:00 - 20:00</span>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">🌐</div>
+                        <div>
+                            <strong>Modalidad</strong>
+                            <span>Online & Presencial disponible</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form glass-card reveal-item" id="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">Tu Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="servicio">Servicio de Interés</label>
+                        <select id="servicio" name="servicio">
+                            <option value="">Selecciona un servicio...</option>
+                            <option value="clases">Clases de Arpa</option>
+                            <option value="partituras">Lectura de Partituras</option>
+                            <option value="tecnica">Técnica & Postura</option>
+                            <option value="eventos">Música para Eventos</option>
+                            <option value="principiantes">Arpa desde Cero</option>
+                            <option value="repertorio">Repertorio Musical</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje"
+                            placeholder="Cuéntame sobre tu experiencia musical y tus metas..." rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary btn-full" id="form-submit-btn">
+                        Enviar Mensaje 🎵
+                    </button>
+                    <div class="form-success" id="form-success">
+                        ✨ ¡Gracias! Te responderé muy pronto.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="images/logo.jpg" alt="aprendeconmoni" class="footer-logo-img"
+                            onerror="this.style.display='none'">
+                        <span class="logo-text">aprendecon<span class="logo-accent">moni</span></span>
+                    </div>
+                    <p class="footer-tagline">Aprende arpa con pasión, técnica y creatividad. Tu música, tu historia.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link" id="footer-instagram" aria-label="Instagram">📸</a>
+                        <a href="#" class="footer-social-link" id="footer-youtube" aria-label="YouTube">▶️</a>
+                        <a href="#" class="footer-social-link" id="footer-tiktok" aria-label="TikTok">🎵</a>
+                        <a href="#" class="footer-social-link" id="footer-whatsapp" aria-label="WhatsApp">💬</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Clases de Arpa</a></li>
+                        <li><a href="#servicios">Lectura de Partituras</a></li>
+                        <li><a href="#servicios">Técnica & Postura</a></li>
+                        <li><a href="#servicios">Música para Eventos</a></li>
+                        <li><a href="#servicios">Arpa desde Cero</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Aprende</h4>
+                    <ul>
+                        <li><a href="#showcase">Mi Mundo Musical</a></li>
+                        <li><a href="#proceso">Cómo Funciona</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="mailto:vera_viveros@hotmail.com">✉️ Email</a></li>
+                        <li><a href="#contacto">💬 Formulario</a></li>
+                        <li><a href="#">📱 WhatsApp</a></li>
+                        <li><a href="#">📅 Reservar Clase</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 aprendeconmoni. Todos los derechos reservados. Hecho con 💜 y música.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacidad</a>
+                    <a href="#">Términos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
